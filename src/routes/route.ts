@@ -1,6 +1,7 @@
 import type { IncomingMessage, ServerResponse } from "http";
 import { json } from "stream/consumers";
 import productController from "../controllers/product.controller";
+import courseController from "../controllers/course.controller";
 
 const routeHandler =(req : IncomingMessage,res : ServerResponse)=>{
 const url = req.url;   
@@ -19,8 +20,7 @@ if(url === "/" && method === "GET"){
 
 }
 else if (url?.startsWith("/courses")){
- res.writeHead(200,{"content-type": "application/json"});
-    res.end(JSON.stringify({message:"This is courses route"}))
+ courseController(req,res);
 }
 
 else{
