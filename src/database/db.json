@@ -1,12 +1,1 @@
-[
-    {
-                "id": 1,
-               "name": "watch",
-                "price": 20
-    },
-    {
-                "id": 2,
-                "name": "t-shirt",
-                "price": 40
-    }
-]
+[{"id":2,"name":"pant","price":12},{"id":1794727210106,"name":"Iphone-17","price":150}]
